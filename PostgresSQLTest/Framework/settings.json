@@ -1,0 +1,5 @@
+﻿{
+  "ConnectionStrings": {
+    "CnnString": "Host=localhost;Database=sandbox;Username=sandbox_user;Password=sandboxuserpwd;Persist Security Info=True"
+  }
+}

@@ -1,16 +1,24 @@
-# PostgreSQL .NET EF Example
+# PostgreSQL .NET Entity Framework Example
 
-The repo contains a .NET Core console app using Entity Framework to work with PostgresSQL.  This application was developed using Database First and the entities were generated using [Npgsql Entity Framework Core Provider](https://www.npgsql.org/efcore/).
+The repo contains a .NET Core console app using Entity Framework to work with PostgresSQL.  This application uses LINQ to pull a list of cryptocurrency symbols from a table. 
 
-In order to run the application do the following.
+This application was developed using Database First and the entities were generated using [Npgsql Entity Framework Core Provider](https://www.npgsql.org/efcore/).
+
+**Example**: dotnet ef dbcontext scaffold "Host=localhost;Database=sandbox;Username=sandbox_user;Password=sandboxuserpwd" Npgsql.EntityFrameworkCore.PostgreSQL
+
+This example assumes you have PostgreSQL installed. 
+
+**In order to run the application do the following:**
 
 1. Restore the database located at Resources folder to your PostgresSQL instance.
 2. Update the connection string under Framework/settings.json with a user id and password from your instance. 
 
+**Project Contents:**
 
+- Framework Folder: Setups up the service provider to inject services and property objects
+- Services Folder:  A method that runs a LINQ query to pull crypto symbols
+- Typical Model and Interface folders
 
-
-
-**Sample Output**
+**Sample Output:**
 
 ![](https://github.com/RegencySoftware/PostgreSQLEntityFramework/blob/main/PostgresSQLTest/Resources/ScreenShot.png?raw=true)
