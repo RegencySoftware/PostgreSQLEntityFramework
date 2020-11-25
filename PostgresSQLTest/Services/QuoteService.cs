@@ -5,6 +5,7 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 namespace PostgresSQLTest.Services
 {
@@ -31,7 +32,25 @@ namespace PostgresSQLTest.Services
                          select q).ToList();
 
             return query;
-
+        }
+        public void InsertQuoteData()
+        {
+            InsertQuoteRow("ADA");
+            InsertQuoteRow("BTC");
+            InsertQuoteRow("ETH");
+            InsertQuoteRow("LTC");
+            InsertQuoteRow("MRX");
+        }
+        private void InsertQuoteRow(string symbol)
+        {
+            var row = new QuoteData();
+            row.Symbol = symbol;
+            _context.QuoteData.Add(row);
+            _context.SaveChanges();
+        }
+        public void TruncateQuotesTable()
+        {
+            _context.Database.ExecuteSqlRaw("TRUNCATE TABLE crypto_data.quote_data");
         }
     }
 }

@@ -6,8 +6,9 @@ using System.Text;
 namespace PostgresSQLTest.Interfaces
 {
     public interface IQuoteService 
-    {
-        List<QuoteData> GetAllQuotes(); 
-
+    {    
+        void TruncateQuotesTable();
+        void InsertQuoteData();
+        List<QuoteData> GetAllQuotes();
     }
 }

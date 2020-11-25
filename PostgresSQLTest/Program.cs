@@ -11,10 +11,17 @@ namespace PostgresSQLTest
         static void Main(string[] args)
         {
             Framework.ConfigureServices.SetupCollection();
-
-            Console.WriteLine("\n Listing Crypto Symbols...\n");
-                                    
             var quoteService = Framework.ConfigureServices.sp.GetService<IQuoteService>();
+
+            Console.WriteLine("\n (1) Truncate Crypto Quotes Table...\n");
+            quoteService.TruncateQuotesTable();
+
+            Console.WriteLine("\n (2) Insert Crypto Quote Data...\n");
+            quoteService.InsertQuoteData();
+
+
+            Console.WriteLine("\n (3) Get Crypto Symbols...\n");            
+          
             var quoteData = quoteService.GetAllQuotes();
 
             foreach (var item in quoteData)
