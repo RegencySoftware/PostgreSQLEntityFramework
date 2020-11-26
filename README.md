@@ -10,8 +10,8 @@ This example assumes you have PostgreSQL installed.
 
 **In order to run the application do the following:**
 
-1. Restore the database located at Resources folder to your PostgresSQL instance.
-2. Update the connection string under Framework/settings.json with a user id and password from your instance. 
+1. Run the Create Table statement under Resources\CreateTable.sql folder on your PostgresSQL instance.
+2. Update the connection string under Framework\settings.json with a user id and password from your instance. 
 
 **Project Contents:**
 
