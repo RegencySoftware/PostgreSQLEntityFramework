@@ -1,9 +1,9 @@
-﻿using PostgresSQLTest.Models;
+﻿using PostgreSQLTest.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PostgresSQLTest.Interfaces
+namespace PostgreSQLTest.Interfaces
 {
     public interface IQuoteService 
     {    

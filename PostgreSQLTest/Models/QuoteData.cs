@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace PostgresSQLTest.Models
+namespace PostgreSQLTest.Models
 {
     public partial class QuoteData
     {

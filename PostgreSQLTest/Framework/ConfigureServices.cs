@@ -1,6 +1,6 @@
-﻿using PostgresSQLTest.Interfaces;
-using PostgresSQLTest.Services;
-using PostgresSQLTest.Framework;
+﻿using PostgreSQLTest.Interfaces;
+using PostgreSQLTest.Services;
+using PostgreSQLTest.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,7 +8,7 @@ using System.Text;
 
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PostgresSQLTest.Framework
+namespace PostgreSQLTest.Framework
 {
     public static class ConfigureServices
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PostgresSQLTest.Framework
+namespace PostgreSQLTest.Framework
 {
     public interface IProperties
     {

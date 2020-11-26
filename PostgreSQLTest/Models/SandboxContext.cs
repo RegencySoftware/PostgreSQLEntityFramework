@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace PostgresSQLTest.Models
+namespace PostgreSQLTest.Models
 {
     public partial class SandboxContext : DbContext
     {

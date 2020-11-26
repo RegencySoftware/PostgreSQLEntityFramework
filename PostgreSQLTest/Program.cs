@@ -1,10 +1,10 @@
-﻿using PostgresSQLTest.Interfaces;
-using PostgresSQLTest.Services;
-using PostgresSQLTest.Framework;
+﻿using PostgreSQLTest.Interfaces;
+using PostgreSQLTest.Services;
+using PostgreSQLTest.Framework;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace PostgresSQLTest
+namespace PostgreSQLTest
 {
     class Program
     {

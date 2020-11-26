@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace PostgresSQLTest.Framework
+namespace PostgreSQLTest.Framework
 {
     public class Properties : IProperties
     {

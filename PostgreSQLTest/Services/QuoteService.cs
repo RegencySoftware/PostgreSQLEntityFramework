@@ -1,13 +1,13 @@
-﻿using PostgresSQLTest.Interfaces;
-using PostgresSQLTest.Models;
-using PostgresSQLTest.Framework;
+﻿using PostgreSQLTest.Interfaces;
+using PostgreSQLTest.Models;
+using PostgreSQLTest.Framework;
 using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 
-namespace PostgresSQLTest.Services
+namespace PostgreSQLTest.Services
 {
     public class QuoteService : IQuoteService
     {
