@@ -15,9 +15,9 @@ This example assumes you have PostgreSQL installed.
 
 **Project Contents:**
 
-- Framework Folder: Setups up the service provider to inject services and property objects
-- Services Folder:  A method that runs a LINQ query to pull crypto symbols
-- Typical Model and Interface folders
+- Framework Folder: Setups up the service provider to inject services and property objects.
+- Services Folder:  A method that runs a LINQ query to pull crypto symbols.
+- Typical Model and Interface folders.
 
 **Sample Output:**
 
