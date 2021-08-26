@@ -4,13 +4,13 @@ using PostgreSQLTest.Framework;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-//Update
 namespace PostgreSQLTest
 {
     class Program
     {
         static void Main(string[] args)
         {
+			//Setup Collection
             Framework.ConfigureServices.SetupCollection();
             var quoteService = Framework.ConfigureServices.sp.GetService<IQuoteService>();
 
