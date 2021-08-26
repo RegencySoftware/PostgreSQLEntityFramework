@@ -1,6 +1,6 @@
 # PostgreSQL .NET Entity Framework Example
 
-The repo contains a .NET Core console app using Entity Framework to work with PostgreSQL.  This console app will truncation a table that holds Cryptocurrency symbols, reloads it, then runs a LINQ query. 
+The repo contains a .NET Core console app using Entity Framework to work with PostgreSQL.  This console app will truncation a table that holds Cryptocurrency symbols, reloads it, then runs a LINQ query.  Test Cpde
 
 This application was developed using Database First and the entities were generated using [Npgsql Entity Framework Core Provider](https://www.npgsql.org/efcore/).
 
