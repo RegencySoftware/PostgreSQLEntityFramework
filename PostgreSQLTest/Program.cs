@@ -14,6 +14,7 @@ namespace PostgreSQLTest
             Framework.ConfigureServices.SetupCollection();
             var quoteService = Framework.ConfigureServices.sp.GetService<IQuoteService>();
 
+			//Truncate
             Console.WriteLine("\n (1) Truncate Crypto Quotes Table...\n");
             quoteService.TruncateQuotesTable();
 
