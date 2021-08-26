@@ -10,6 +10,7 @@ namespace PostgreSQLTest
     {
         static void Main(string[] args)
         {
+			//Setup Collection
             Framework.ConfigureServices.SetupCollection();
             var quoteService = Framework.ConfigureServices.sp.GetService<IQuoteService>();
 
